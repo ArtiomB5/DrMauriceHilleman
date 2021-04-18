@@ -1,0 +1,33 @@
+$body_color: #e0fbfc;
+$font_color: #293241;
+
+
+@mixin fontstyle($fontSize, $color){
+    font-size: $fontSize;
+    color: $color;
+}
+
+
+%shadow{
+    box-shadow:  0 0 10px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 0 10px  5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+    -o-box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
+%button{
+    @include fontstyle(20px, $body_color);
+    max-width: 450px;
+    max-height: 50px;
+    line-height: 45px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ee6c4d;
+    background-color: $font_color;
+    border-radius: 10px;
+}
+%blockStyle{
+    max-width: 800px;
+    background-color: #DEE2EC;
+    margin: 0 auto;
+}
